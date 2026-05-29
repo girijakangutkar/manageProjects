@@ -13,7 +13,7 @@ const options = {
     servers: [
       {
         url: isProduction
-          ? "https://manage-projects-git-master-girijakangutkars-projects.vercel.app"
+          ? "https://manage-projects-psi.vercel.app/"
           : "http://localhost:5000",
         description: isProduction ? "Production Server" : "Local Server"
       }
