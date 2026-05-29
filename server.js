@@ -17,19 +17,14 @@ app.use(express.json())
 
 // Swagger API 
 app.use(
-  "/api-docs-assets",
-  express.static(path.join(__dirname, "../node_modules/swagger-ui-dist"))
-);
-
-// Swagger UI
-app.use(
   "/api-docs",
   swaggerUi.serve,
   swaggerUi.setup(swaggerSpec, {
-    customCssUrl: "/api-docs-assets/swagger-ui.css",
+    customCssUrl:
+      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui.min.css",
     customJs: [
-      "/api-docs-assets/swagger-ui-bundle.js",
-      "/api-docs-assets/swagger-ui-standalone-preset.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-bundle.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-standalone-preset.min.js",
     ],
   })
 );
