@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken")
 const saltRounds = 10;
-const authModel = require("../model/authModel");
+const authModel = require("../model/AuthModel");
 
 exports.signUpController = async(req, res) => {
     try {
