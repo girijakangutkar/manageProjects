@@ -15,6 +15,8 @@ const port = 5000;
 app.use(express.json())
 
 // Swagger API 
+app.use("/api-docs", express.static(path.join(__dirname, "../node_modules/swagger-ui-dist")));
+
 app.use(
     "/api-docs",
     swaggerUi.serve,
