@@ -1,9 +1,11 @@
 # Manage Projects
 
 A RESTful API built with **Node.js**, **Express**, **MongoDB**, and **JWT authentication** to manage projects and users.
-https://manage-projects-psi.vercel.app/api-docs
 ---
-
+Deployed link
+```
+https://manage-projects-psi.vercel.app/api-docs
+```
 ## Features
 - User authentication (signup, login, logout)
 - JWT-based authorization
