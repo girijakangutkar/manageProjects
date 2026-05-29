@@ -1,5 +1,7 @@
 const swaggerJsDoc = require("swagger-jsdoc");
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const options = {
   definition: {
     openapi: "3.0.0",
@@ -10,7 +12,10 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000"
+        url: isProduction
+          ? "https://manage-projects-git-master-girijakangutkars-projects.vercel.app"
+          : "http://localhost:5000",
+        description: isProduction ? "Production Server" : "Local Server"
       }
     ],
 
