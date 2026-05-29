@@ -5,6 +5,7 @@ const swaggerSpec = require("./config/swagger");
 
 const authRouter = require("./routes/AuthRoutes");
 const projectRouter = require("./routes/projectsRoutes");
+const path = require("path");
 
 const app = express();
 require("dotenv").config()
